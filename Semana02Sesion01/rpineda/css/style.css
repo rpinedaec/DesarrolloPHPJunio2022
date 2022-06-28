@@ -1,0 +1,20 @@
+body {
+    background:url("../certificado/certificado.jpeg");
+    font-family:'PT Sans',Helvetica, Arial, sans-serif;
+    color:rgb(2, 2, 2);
+       background-repeat: no-repeat;
+       background-size:cover;
+    }
+    
+    #divDatos {
+        position: relative;
+        width: 452px;
+        margin: 35% auto 0 auto;
+        text-align: center;
+        font-family: cursive;
+        font-size: xxx-large;
+
+    }
+    #nombreLabel{
+        margin:15px auto 0 auto;
+    }
