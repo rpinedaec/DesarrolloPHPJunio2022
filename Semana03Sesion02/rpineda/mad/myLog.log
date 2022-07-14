@@ -1,0 +1,52 @@
+DEBUG - stdClass Object
+(
+    [id_usuarios] => 1
+    [correo] => dlopez@x-codec.net
+)
+
+DEBUG - Array
+(
+    [0] => 1
+    [1] => dlopez@x-codec.net
+)
+
+DEBUG - stdClass Object
+(
+    [id_usuarios] => 1
+    [correo] => dlopez@x-codec.net
+)
+
+DEBUG - Array
+(
+    [0] => 1
+    [1] => dlopez@x-codec.net
+)
+
+DEBUG - stdClass Object
+(
+    [id_usuarios] => 1
+    [correo] => dlopez@x-codec.net
+)
+
+DEBUG - Array
+(
+    [0] => dlopez@x-codec.net
+    [1] => 1
+)
+
+DEBUG - stdClass Object
+(
+)
+
+DEBUG - stdClass Object
+(
+    [id_usuarios] => 1
+    [correo] => klam@x-codec.net
+)
+
+DEBUG - Array
+(
+    [0] => klam@x-codec.net
+    [1] => 1
+)
+
