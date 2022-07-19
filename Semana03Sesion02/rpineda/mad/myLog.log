@@ -50,3 +50,35 @@ DEBUG - Array
     [1] => 1
 )
 
+DEBUG - stdClass Object
+(
+)
+
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - stdClass Object
+(
+)
+
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
