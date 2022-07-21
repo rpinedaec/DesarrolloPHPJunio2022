@@ -4,20 +4,24 @@ $GLOBALS["ws_funciones_def"] = array(
     "FUN_ID_DEF" => array(
         "HEARBEAT", //0
         "LOGIN", //1
-        "UPDUSUARIOSCORREO",//2
+        "LOGOUT", //2
+        "GET_CATEGORIAS",//3
+        "GET_PRODUCTOS", //4
+
     ),
     "FUN_NAME_DEF" => array(
         "Latido del Servidor",
         "Login",
-        "Actualiza el correo del usuario",
+        "Logout",
+        "Trae todas las categorias de la base",
+        "Trae los Productos de la tienda",
     ),
     "FUN_EXAMPLE_DEF" => array(
         "{}",
         '{"correo":"rpineda@x-codec.net", "password": "123456"}',
-        '{
-            "id_usuarios" : 1,
-            "correo" : "dlopez@x-codec.net"
-        }'
+        '{}',
+        '{}',
+        '{}'
     )
 );
 define('ERROR_PARAMETROS_INSUFICIENTES', 'Parámetros Insuficientes');

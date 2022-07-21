@@ -79,10 +79,35 @@ function db_login($password, $correo){
 	$db_arg = array (
 			$correo
 	);
-    $log = Logger::getLogger(__CLASS__);
 	if ($stmt->execute($db_arg)) {
         $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		$log->debug($resultado);
+		return $resultado;
+	} else {
+		throw new Exception ( ERROR_EN_EL_PROCEDIMIENTO );
+	}
+}
+
+function db_get_categorias(){
+    global $GET_CATEGORIAS;
+	$db_connection = db_get_connection_default ();
+	$query = $GET_CATEGORIAS;
+	$stmt = $db_connection->prepare ( $query );
+	if ($stmt->execute()) {
+        $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		return $resultado;
+	} else {
+		throw new Exception ( ERROR_EN_EL_PROCEDIMIENTO );
+	}
+}
+
+
+function db_get_productos(){
+    global $GET_PRODUCTOS;
+	$db_connection = db_get_connection_default ();
+	$query = $GET_PRODUCTOS;
+	$stmt = $db_connection->prepare ( $query );
+	if ($stmt->execute()) {
+        $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		return $resultado;
 	} else {
 		throw new Exception ( ERROR_EN_EL_PROCEDIMIENTO );

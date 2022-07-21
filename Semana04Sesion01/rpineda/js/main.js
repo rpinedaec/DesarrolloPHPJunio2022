@@ -100,52 +100,247 @@
         button.parent().parent().find('input').val(newVal);
     });
     
-    $('#singin').on('click', function(ev) {
+    $('#singin').on('click', function() {
+        console.log(this);
+        let valor =this.textContent;
+        if(!valor.includes("Cerrar Sesi")){
+            console.log(valor);
+            $('#myModal').modal('show');
+        }
+        else{
+            cerrarSesion();
+        }
+        
+    });
+
+    
+
+    function cerrarSesion(){
+        let http = new XMLHttpRequest();
+        let url = window.location.origin+"/DesarrolloPHPJunio2022/Semana04Sesion01/rpineda/mad/";
+        let funcion = "LOGOUT"
+        let txtArgumentos = '{}';
+        let argumentos = eval("(" + txtArgumentos + ")");
+        let jsonArgumentos = {};
+        console.log(txtArgumentos);
+		jsonArgumentos.funcion = funcion;
+		jsonArgumentos.args = argumentos;
+		var strparams = "PARAM=" + JSON.stringify(jsonArgumentos);
+		http.onreadystatechange = handle_json;
+		http.open("POST", url, true);
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.send(strparams);
+		function handle_json()
+        {
+            if (http.readyState == 4)
+            {
+                if (http.status == 200)
+                {
+                    let json_data = JSON.parse(http.responseText);
+                    console.log(json_data);
+                    sessionStorage.clear();
+                    location.reload();
+                }
+                else
+                {
+                    console.error("Error");
+                }
+            }
+        }
+    }
+    
+    $('#btnClose').on('click', function() {
         console.log("hizo click");
-        $('#myModal').modal('show');
-    
-    
-    
-        ev.preventDefault();
+        $('#myModal').modal('hide');
     });
 
     $('#btnLogin').on('click', function(ev) {
         console.log("hizo click en login");
-        var http = new XMLHttpRequest();
-				var url = window.location.origin+"/DesarrolloPHPJunio2022/Semana04Sesion01/rpineda/mad/";
-				
-					
-					var funcion = "LOGIN"
-					var txtArgumentos = '{"correo":"'+$("#correo").val()+'", "password": "'+$("#password").val()+'"}';
-					var argumentos = eval("(" + txtArgumentos + ")");
-					var jsonArgumentos = {};
-                    console.log(txtArgumentos);
-					jsonArgumentos.funcion = funcion;
-					jsonArgumentos.args = argumentos;
-					var strparams = "PARAM=" + JSON.stringify(jsonArgumentos);
-					http.onreadystatechange = handle_json;
-					http.open("POST", url, true);
-					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-					http.send(strparams);
-				
-				function handle_json()
-				{
-					if (http.readyState == 4)
-					{
-						if (http.status == 200)
-						{
-							var json_data = http.responseText;
-							console.log(json_data);
-							
-						}
-						else
-						{
-							console.error("Error");
-						}
-					}
-				}    
+        let http = new XMLHttpRequest();
+        let url = window.location.origin+"/DesarrolloPHPJunio2022/Semana04Sesion01/rpineda/mad/";
+        let funcion = "LOGIN"
+        let txtArgumentos = '{"correo":"'+$("#correo").val()+'", "password": "'+$("#password").val()+'"}';
+        let argumentos = eval("(" + txtArgumentos + ")");
+        let jsonArgumentos = {};
+        console.log(txtArgumentos);
+		jsonArgumentos.funcion = funcion;
+		jsonArgumentos.args = argumentos;
+		var strparams = "PARAM=" + JSON.stringify(jsonArgumentos);
+		http.onreadystatechange = handle_json;
+		http.open("POST", url, true);
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.send(strparams);
+		function handle_json()
+        {
+            if (http.readyState == 4)
+            {
+                if (http.status == 200)
+                {
+                    let json_data = JSON.parse(http.responseText);
+                    console.log(json_data);
+                    sessionStorage.setItem("USUARIO", http.responseText);
+                    $('#myModal').modal('hide');
+                    $('#singin').html("Cerrar Sesión :" + json_data.answer.nombres)
+                    location.reload();
+                }
+                else
+                {
+                    console.error("Error");
+                }
+            }
+        }    
         ev.preventDefault();
     });
+    function cargardatos(){
+        let USUARIO = JSON.parse(sessionStorage.getItem("USUARIO"));
+        if(USUARIO != null){
+            
+            $('#singin').html("Cerrar Sesión :" + USUARIO.answer.nombres)
+        }
+    }
+    function cargarCategorias() {
+        let http = new XMLHttpRequest();
+        let url = window.location.origin+"/DesarrolloPHPJunio2022/Semana04Sesion01/rpineda/mad/";
+        let funcion = "GET_CATEGORIAS"
+        let txtArgumentos = '{}';
+        let argumentos = eval("(" + txtArgumentos + ")");
+        let jsonArgumentos = {};
+        console.log(txtArgumentos);
+		jsonArgumentos.funcion = funcion;
+		jsonArgumentos.args = argumentos;
+		var strparams = "PARAM=" + JSON.stringify(jsonArgumentos);
+		http.onreadystatechange = handle_json;
+		http.open("POST", url, true);
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.send(strparams);
+		function handle_json()
+        {
+            if (http.readyState == 4)
+            {
+                if (http.status == 200)
+                {
+                    let json_data = JSON.parse(http.responseText);
+                    console.log(json_data);
+                    let categorias = json_data.answer;
+                    $("#categorias").empty();
+                    $("#categoriasPagina").empty();
+                    
+                    categorias.forEach( function(valor, indice, array) {
+                        console.log("En el índice " + indice + " hay este valor: " + valor.descripcion);
+                        $("#categorias").append('<a href="" class="nav-item nav-link">' +valor.descripcion+ '</a>');
+                        $("#categoriasPagina").append('<div class="col-lg-3 col-md-4 col-sm-6 pb-1"> <a class="text-decoration-none" href=""> <div class="cat-item d-flex align-items-center mb-4"> <div class="overflow-hidden" style="width: 100px; height: 100px;"> <img class="img-fluid" src="img/cat-'+valor.idcategorias+'.jpg" alt=""> </div><div class="flex-fill pl-3"> <h6>'+valor.descripcion+'</h6> <small class="text-body">100 Products</small> </div></div></a> </div>');
+                    });
+                    /*
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>$123.00</h5><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small>(99)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                    */
+                }
+                else
+                {
+                    console.error("Error");
+                }
+            }
+        }
+    }
+    function cargarProductos() {
+        let http = new XMLHttpRequest();
+        let url = window.location.origin+"/DesarrolloPHPJunio2022/Semana04Sesion01/rpineda/mad/";
+        let funcion = "GET_PRODUCTOS"
+        let txtArgumentos = '{}';
+        let argumentos = eval("(" + txtArgumentos + ")");
+        let jsonArgumentos = {};
+        console.log(txtArgumentos);
+		jsonArgumentos.funcion = funcion;
+		jsonArgumentos.args = argumentos;
+		var strparams = "PARAM=" + JSON.stringify(jsonArgumentos);
+		http.onreadystatechange = handle_json;
+		http.open("POST", url, true);
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.send(strparams);
+		function handle_json()
+        {
+            if (http.readyState == 4)
+            {
+                if (http.status == 200)
+                {
+                    let json_data = JSON.parse(http.responseText);
+                    console.log(json_data);
+                    productos = json_data.answer;
+                    $("#productosPagina").empty();
+                    
+                    
+                    productos.forEach( function(valor, indice, array) {
+                        console.log("En el índice " + indice + " hay este valor: " + valor.descripcion);
+                        
+                        $("#productosPagina").append('<div class="col-lg-3 col-md-4 col-sm-6 pb-1"> <div class="product-item bg-light mb-4"> <div class="product-img position-relative overflow-hidden"> <img class="img-fluid w-100" src="img/product-'+valor.idproductos+'.jpg" alt=""> <div class="product-action"> <a class="btn btn-outline-dark btn-square" onclick=" return agregarCarrito('+valor.idproductos+');"><i class="fa fa-shopping-cart"></i></a> <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a> <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a> <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a> </div></div><div class="text-center py-4"> <a class="h6 text-decoration-none text-truncate" href="">'+valor.nombre+'</a> <div class="d-flex align-items-center justify-content-center mt-2"> <h5>'+valor.valor+'</h5><h6 class="text-muted ml-2"><del>'+valor.valor+'</del></h6> </div><div class="d-flex align-items-center justify-content-center mb-1"> <small class="fa fa-star text-primary mr-1"></small> <small class="fa fa-star text-primary mr-1"></small> <small class="fa fa-star text-primary mr-1"></small> <small class="fa fa-star text-primary mr-1"></small> <small class="fa fa-star text-primary mr-1"></small> <small>(99)</small> </div></div></div></div>');
+                    });
+                    /*
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/product-'+valor.idproductos+'.jpg" alt="">
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">'+valor.nombre+'</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>'+valor.valor+'</h5><h6 class="text-muted ml-2"><del>'+valor.valor+'</del></h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small>(99)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                    */
+                }
+                else
+                {
+                    console.error("Error");
+                }
+            }
+        }
+    }
     
+    cargardatos();
+    cargarCategorias();
+    cargarProductos();
 })(jQuery);
 

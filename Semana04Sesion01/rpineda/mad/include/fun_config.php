@@ -30,18 +30,40 @@ function fun_login($args){
     $log = Logger::getLogger(__CLASS__);
     $password = $args->password;
     $correo = $args->correo;
-    $log->debug("$correo - $password");
     $resp = db_login($password, $correo);
     $pass = $resp[0]["password"];
     if($pass==$password){
         unset($resp[0]['password']);
-        return $resp;
+        session_start();
+        $_SESSION["usuario"] = $resp[0];
+        return $resp[0];
+
     }
     else{
         return false;
     }
     return $resp;
 }
+
+function fun_logout($args){
+    try {
+        session_start();
+        session_destroy();
+        return true;
+    } catch (Exception $e) {
+        throw new Exception(ERROR_PARAMETROS_INSUFICIENTES);
+    }
+}
+function fun_get_categorias($args){
+    $resp = db_get_categorias();
+    return $resp;
+}
+function fun_get_productos($args){
+    $resp = db_get_productos();
+    return $resp;
+}
+
+
 
 function fun_upd_usuarios_correo($args){
     if (!isset($args->id_usuarios) || !isset($args->correo)) {

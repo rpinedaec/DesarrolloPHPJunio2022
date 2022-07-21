@@ -39,8 +39,14 @@ function initConfig(){
                 case $ws_funciones_def["FUN_ID_DEF"][1]: // LOGIN
                     $response->answer = fun_login($args);
                     break;
-                case $ws_funciones_def["FUN_ID_DEF"][2]: // UPDUSUARIOSCORREO
-                    $response->answer = fun_upd_usuarios_correo($args);
+                case $ws_funciones_def["FUN_ID_DEF"][2]: // LOGOUT
+                    $response->answer = fun_logout($args);
+                    break;
+                case $ws_funciones_def["FUN_ID_DEF"][3]: // GET_CATEGORIAS
+                    $response->answer = fun_get_categorias($args);
+                    break;
+                case $ws_funciones_def["FUN_ID_DEF"][4]: // GET_PRODUCTOS
+                    $response->answer = fun_get_productos($args);
                     break;
                 default:
                     throw new Exception("Funcion: $fun no encontrada", 1);
