@@ -18,7 +18,7 @@ $GLOBALS["ws_funciones_def"] = array(
     ),
     "FUN_EXAMPLE_DEF" => array(
         "{}",
-        '{"correo":"rpineda@x-codec.net", "password": "123456"}',
+        '{"usuario":"venegas", "password": "12345"}',
         '{}',
         '{}',
         '{}'

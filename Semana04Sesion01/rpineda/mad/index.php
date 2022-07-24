@@ -16,12 +16,13 @@ function initConfig(){
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');
     $response = new stdClass();
-    $parametros;
-    $fun;
+    $parametros="";
+    $fun="";
     if (!isset($_POST["PARAM"])) {
         $response->Error = "Petición no encontrada";
     } else {
         $parametros = json_decode($_POST["PARAM"]);
+        // echo json_encode($parametros);
         try {
             $fun = $parametros->funcion;
             $args = $parametros->args;
@@ -38,6 +39,7 @@ function initConfig(){
                     break;
                 case $ws_funciones_def["FUN_ID_DEF"][1]: // LOGIN
                     $response->answer = fun_login($args);
+                    // echo json_encode("ejecutando hasta este punto ");
                     break;
                 case $ws_funciones_def["FUN_ID_DEF"][2]: // LOGOUT
                     $response->answer = fun_logout($args);

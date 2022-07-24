@@ -24,12 +24,12 @@ function GetServerStatus($site, $port)
 }
 
 function fun_login($args){
-    if (!isset($args->correo) || !isset($args->password)) {
+    if (!isset($args->usuario) || !isset($args->password)) {
         throw new Exception(ERROR_PARAMETROS_INSUFICIENTES);
     }
     $log = Logger::getLogger(__CLASS__);
     $password = $args->password;
-    $correo = $args->correo;
+    $correo = $args->usuario;
     $resp = db_login($password, $correo);
     $pass = $resp[0]["password"];
     if($pass==$password){

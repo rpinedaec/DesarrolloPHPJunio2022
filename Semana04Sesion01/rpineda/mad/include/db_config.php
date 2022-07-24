@@ -5,7 +5,7 @@ function db_get_connection_default() {
 	try {
 		$db_user = "root";
 		$db_password = "";
-		$db_dbName = "ishop";
+		$db_dbName = "sis-ventas";
 		$db_server = "localhost";
 		$db_connection = new stdClass ();
 		$db_connection->user = $db_user;
