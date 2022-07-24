@@ -1,0 +1,1049 @@
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => 123456
+)
+
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => 123456
+)
+
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda - 123456
+DEBUG - 
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda - 123456
+DEBUG - Array
+(
+)
+
+DEBUG - Array
+(
+)
+
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - {"funcion":"LOGIN","args":{"correo":"rpineda@x-codec.net","password":"123456"}}
+DEBUG - stdClass Object
+(
+    [correo] => rpineda@x-codec.net
+    [password] => 123456
+)
+
+DEBUG - LOGIN
+DEBUG - Array
+(
+    [FUN_ID_DEF] => Array
+        (
+            [0] => HEARBEAT
+            [1] => LOGIN
+            [2] => UPDUSUARIOSCORREO
+        )
+
+    [FUN_NAME_DEF] => Array
+        (
+            [0] => Latido del Servidor
+            [1] => Login
+            [2] => Actualiza el correo del usuario
+        )
+
+    [FUN_EXAMPLE_DEF] => Array
+        (
+            [0] => {}
+            [1] => {"correo":"rpineda@x-codec.net", "password": "123456"}
+            [2] => {
+            "id_usuarios" : 1,
+            "correo" : "dlopez@x-codec.net"
+        }
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - 123456
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123121
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - rpineda@x-codec.net - 123456
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+)
+
+DEBUG - Array
+(
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
+DEBUG - Array
+(
+    [0] => Array
+        (
+            [idusuarios] => 1
+            [apellidos] => Pineda Lopez
+            [nombres] => Roberto David
+            [email] => rpineda@x-codec.net
+            [password] => 123456
+            [direccion] => Lima
+        )
+
+)
+
